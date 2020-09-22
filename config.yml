@@ -1,0 +1,16 @@
+url: https://www.google.com
+
+database:
+  driverClass: com.mysql.cj.jdbc.Driver
+  user: ${DB_USERNAME}
+  password: ${DB_PASSWORD}
+  url: jdbc:mysql://localhost:3306/employeedb?autoReconnect=true&useSSL=false
+  maxWaitForConnection: 10s
+  validationQuery: "SELECT 1"
+  validationQueryTimeout: 5s
+  minSize: 8
+  maxSize: 32
+  checkConnectionWhileIdle: false
+  evictionInterval: 10s
+  minIdleTime: 1 minute
+  checkConnectionOnBorrow: true
